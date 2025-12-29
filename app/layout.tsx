@@ -8,7 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <Script
           defer
-          data-domain="DEINE-DOMAIN.DE"
+          data-domain="investment-calculator-koeds13lt-paras-singhs-projects-f072a0f0.vercel.app/"
           src="https://plausible.io/js/script.js"
           strategy="afterInteractive"
         />
