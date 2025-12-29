@@ -81,7 +81,6 @@ function safeCalc(inputs: Inputs): Results {
   } catch {
     // Fallback: minimal “nicht crashen”
     return {
-      // @ts-expect-error - wir liefern ein partial-ish fallback, reicht fürs UI
       netCashflow: 0,
       dscr: 0,
       cashOnCash: 0,
