@@ -1,33 +1,43 @@
 export default function ImpressumPage() {
   return (
-    <main className="mx-auto max-w-3xl p-6 text-zinc-900">
-      <h1 className="text-2xl font-bold">Impressum</h1>
+    <main className="min-h-screen px-6 py-10 text-white">
+      <div className="mx-auto max-w-3xl space-y-6">
+        <h1 className="text-3xl font-semibold">Impressum</h1>
 
-      <h2 className="mt-6 text-lg font-semibold">Angaben gemäß § 5 TMG</h2>
-      <p className="mt-2 leading-7">
-        Paras Singh <br />
-        Jablonskistraße 17 <br />
-        Deutschland
-      </p>
+        <section className="space-y-2">
+          <h2 className="text-xl font-semibold">Angaben gemäß § 5 TMG</h2>
+          <p>Paras Singh</p>
+          <p>Jablonskistraße 17</p>
+          <p>Deutschland</p>
+        </section>
 
-      <h2 className="mt-6 text-lg font-semibold">Kontakt</h2>
-      <p className="mt-2 leading-7">
-        E-Mail:{" "}
-        <a className="underline" href="mailto:paras_8@icloud.com">
-          paras_8@icloud.com
-        </a>
-      </p>
+        <section className="space-y-2">
+          <h2 className="text-xl font-semibold">Kontakt</h2>
+          <p>
+            E-Mail:{" "}
+            <a
+              href="mailto:paras_8@icloud.com"
+              className="underline hover:opacity-80"
+            >
+              paras_8@icloud.com
+            </a>
+          </p>
+        </section>
 
-      <h2 className="mt-6 text-lg font-semibold">Produkt</h2>
-      <p className="mt-2 leading-7">
-        Elavis – Objektbezogene Immobilienanalyse (MVP)
-      </p>
+        <section className="space-y-2">
+          <h2 className="text-xl font-semibold">Produkt</h2>
+          <p>Elavis – Objektbezogene Immobilienanalyse (MVP)</p>
+        </section>
 
-      <h2 className="mt-6 text-lg font-semibold">Hinweis</h2>
-      <p className="mt-2 leading-7">
-        Elavis befindet sich in einer Testphase. Die bereitgestellten Informationen
-        stellen keine Steuer-, Rechts- oder Finanzberatung dar. Alle Angaben ohne Gewähr.
-      </p>
+        <section className="space-y-2 text-sm text-zinc-300">
+          <h2 className="text-xl font-semibold text-white">Hinweis</h2>
+          <p>
+            Elavis befindet sich in einer Testphase. Die bereitgestellten
+            Informationen stellen keine Steuer-, Rechts- oder Finanzberatung dar.
+            Alle Angaben ohne Gewähr.
+          </p>
+        </section>
+      </div>
     </main>
   );
 }
